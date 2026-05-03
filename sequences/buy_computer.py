@@ -7,6 +7,7 @@ availabale_parts=["computer",
                   "dvd driver"
                   ]
 # valid_choices=[str(i) for i in range (1,len(availabale_parts)+1)]
+
 valid_choices= []
 for i in range(1, len(availabale_parts) + 1 ):
     valid_choices.append(str(i))
