@@ -2,12 +2,23 @@ import random
 
 # this fuction tells to take the input until the user gives vaild input 
 def get_integer(prompt):
+    """ Get an integer from the standard Input (stdin).
+
+    The function will continue looping , and prompting
+    the user , until a valid `int` is entered.
+
+    :param prompt: The String that the user will see , when
+                    they're prompted to enter the value.    
+    :return _type_: The integer that the users enters.
+    """
     while True:
         temp=input(prompt)
         if temp.isnumeric(): # Takes user input as a string
             return int(temp)
         else:
             print("The {0} is invalid. Please enter valid input".format(temp))   
+
+help(get_integer)
 
 highest = 1000
 answer = random.randint(1, highest)
