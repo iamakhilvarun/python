@@ -9,11 +9,20 @@ while True:
             print("LOGIN SUCCESSFULLY......")
             break
         else:
-            i=3
-            for i in range (3,0,-1):
-              print("You have written worng password, Please write correct password")
-              print("you have {} attempts left".format(i-1))
-              break
-
+            success= False
+            for attempts in range (3,0,-1):
+              print("You have written wrong password, Please write correct password")
+              print("you have {} attempts left".format(attempts-1))
+              password=input("Enter your password: ")
+              
+              if password ==correct_password:
+                  print("LOGIN SUCCESSFULLY")
+                  success=True
+                  break
+            if success:#if success == True (else block terminates)
+                  break
+            else:
+                print("QUITING PROGRAM")
+                break
     else:
         print("Wrong username")
