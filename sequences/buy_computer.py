@@ -15,6 +15,7 @@ print(valid_choices)
 current_choice="-"
 computer_parts=[]#create a empty list
 
+availabale_parts.sort()
 while current_choice != '0':
     if current_choice in valid_choices:
         index= int(current_choice) -1
