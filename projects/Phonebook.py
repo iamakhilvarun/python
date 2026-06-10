@@ -12,12 +12,13 @@ contacts = {
 
 
 def menu_system():
-    print("1. option 1")
-    print("2. option 2")
-    print("3. option 3")
-    print("4. option 4")
-    print("5. option 5")
-    print("6. Exit program")
+    print("1. option 1: Add a contact")
+    print("2. option 2: Find contact")
+    print("3. option 3: Show all contacts")
+    print("4. option 4: Delete a contact")
+    print("5. option 5: Update a existing contact")
+    print("6. option 6: Total contacts")
+    print("7. Exit program")
 
 
 def option_1():
@@ -56,7 +57,7 @@ def option_5():
         print("The number is updated!!")
         print(f"{name}: {contacts[name]}")
     else:
-        print("There is no such number...")
+        print("There is no such name...")
     
 # option_5()
 def option_6():
@@ -68,18 +69,25 @@ while True:
 
     if choice=="1":
         option_1()
+        print()
     elif choice=="2":
         option_2()
+        print()
     elif choice=="3":
         option_3()
+        print()
     elif choice=="4":
         option_4()
+        print()
     elif choice=="5":
         option_5()
+        print()
     elif choice=="6":
         option_6()
+        print()
     elif choice=="7":
         print("You have exited the program....")
         break
     else:
         print("Invalid option")
+        print()
