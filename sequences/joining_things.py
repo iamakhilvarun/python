@@ -1,4 +1,4 @@
-flowers=[
+flowers=(
     "Dafoodil",
     "Evening Primrose",
     "Hydrangea",
@@ -6,7 +6,7 @@ flowers=[
     "Lavander",
     "Sunflower",
     "Tiger Lily"
-]
+)
 
 # for flower in flowers:
 #     print(flower)

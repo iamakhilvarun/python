@@ -23,16 +23,16 @@ def menu_system():
 
 def option_1():
     print("You have selected option 1")
-    name = input("Please enter the name of the person: ").lower()
+    name = input("Please enter the name of the person: ")
     number = input("Please enter the number of the person: ")
-    contacts[name] = number
+    contacts(name) = number
     print("contact added")
 
 
 def option_2():
     name=input("Please enter the name you want to find: ")
     if name in contacts:
-        print(f"{name}: {contacts[name]}")
+        print(f"{name}: {contacts(name)}")
     else:
         print("There is no such name...")
 # option_2()
@@ -46,16 +46,19 @@ def option_3():
 
 def option_4():
     name=input("Enter the name you want to delete: ")
-    del contacts[name]
-    print(f"Deleting {name}....")
+    if name in contacts:
+        del contacts(name)
+        print(f"Deleting {name}....")
+    else:
+        print("Contact not found.....")
 
 def option_5():
     name=input("Enter the name you want to update: ")
     new_number=input("Enter the new number: ")
     if name in contacts:
-        contacts[name]=new_number
+        contacts(name)=new_number
         print("The number is updated!!")
-        print(f"{name}: {contacts[name]}")
+        print(f"{name}: {contacts(name)}")
     else:
         print("There is no such name...")
     

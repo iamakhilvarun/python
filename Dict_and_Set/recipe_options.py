@@ -1,10 +1,10 @@
 recipes_tuple = {
-    "Chicken and chips": [
+    "Chicken and chips": (
         ("chicken", 100),
         ("potatoes", 3),
         ("salt", 1),
         ("malt vinegar", 5),
-    ],
+    ),
 }
 
 recipes_dict = {

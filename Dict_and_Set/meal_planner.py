@@ -4,15 +4,15 @@ from contents import recipes, pantry
 def add_shopping_list(data: dict, item: str, amount: int) -> None:
     """ADD a tuple containing `item` and `amaount` to the `data` dict"""
     # if item in data:
-    #     data[item]+=amount
+    #     data(item)+=amount
     # else:
-    #     data[item]=amount
-    data[item]=data.setdefault(item,0)+amount
+    #     data(item)=amount
+    data(item)=data.setdefault(item,0)+amount
 
 # display_dict ={str(index+1): meal for index , meal in enumerate(recipes)}
 display_dict = {}
 for index, key in enumerate(recipes):
-    display_dict[str(index + 1)] = key
+    display_dict(str(index + 1)) = key
 
 shopping_list = {}
 
@@ -29,10 +29,10 @@ while True:
         break
 
     elif choice in display_dict:
-        selected_item = display_dict[choice]
+        selected_item = display_dict(choice)
         print(f"You have selected {selected_item}")
         print("Checking ingrediants...")
-        ingredients = recipes[selected_item]
+        ingredients = recipes(selected_item)
         print(ingredients)
 
         for food_item, required_quantity in ingredients.items():

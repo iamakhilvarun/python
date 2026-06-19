@@ -1,4 +1,4 @@
-required_skills = ["Python", "github", "linux"]
+required_skills = ("Python", "github", "linux")
 
 candidates = {
     "anna": {"java", "linux", "windows", "github", "Python", "Fullstack"},

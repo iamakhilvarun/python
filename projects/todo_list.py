@@ -1,5 +1,5 @@
 # TO_DO list
-my_list=[]
+my_list=()
 
 n=int(input("How many do you want to add: "))
 

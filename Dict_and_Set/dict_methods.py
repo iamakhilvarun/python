@@ -11,13 +11,13 @@ d = {
     9: "nine",
 }
 
-pantry_items = ['chicken', 'spam', 'egg', 'bread', 'lemon']
+pantry_items = ('chicken', 'spam', 'egg', 'bread', 'lemon')
 
 
 v=d.values()
 print(v)
 
-d[10]="ten"
+d(10)="ten"
 print(v)
 
 print("four" in v)  # true
@@ -27,14 +27,14 @@ keys= list(d.keys())
 values=list(v)  # => list(d.values())
 if "four" in values:
     index=values.index("four")
-    key= keys[index]
-    print(f"{d[key]} was found with the key {key}")
+    key= keys(index)
+    print(f"{d(key)} was found with the key {key}")
 
 print()
 
 for key ,value in d.items():
     if value == "four":
-        print(f"{d[key]} was found with the key {key}")
+        print(f"{d(key)} was found with the key {key}")
 # Code for "the dict `update` method" lecture
 # d2= {
 #     7:"lucky seven",

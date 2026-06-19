@@ -7,12 +7,12 @@ for animal in farm_animals:
 print()
 
 print("Indexing a sequence")
-animals_list=['cow','sheep','cow','horse','hen','goat']
-goat=animals_list[5]
+animals_list=('cow','sheep','cow','horse','hen','goat')
+goat=animals_list(5)
 print(goat)
 
 # print("Indexing a set is not possible")
-# goat=farm_animals[5]
+# goat=farm_animals(5)
 # print(goat)
 more_animals={'sheep','cow','goat','horse','hen'}
 if more_animals==farm_animals:

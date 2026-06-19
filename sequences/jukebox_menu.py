@@ -9,10 +9,10 @@ while True:
         
     choice=int(input())
     if 1<= choice<= len(albums):
-        songs_list= albums[choice-1][SONGS_LIST_INDEX]
+        songs_list= albums(choice-1)(SONGS_LIST_INDEX)
     else:
          break
-    print(albums[choice-1])
+    print(albums(choice-1))
     print(songs_list)
     print()
 
@@ -22,7 +22,7 @@ while True:
     
     song_choice= int(input())
     if 1<= song_choice <= len(songs_list):
-        title =songs_list[song_choice-1][SONGS_TITLE_INDEX]
+        title =songs_list(song_choice-1)(SONGS_TITLE_INDEX)
     else:
         print("INVALID SONG CHOICE")
         print("Returning to the menu...")

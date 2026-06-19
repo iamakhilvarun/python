@@ -14,7 +14,7 @@ simvastatin = ("simvastatin", "High cholesterol")
 warfarin = ("warfarin", "anti-coagulant")
 
 # Drugs that shouldn't be taken together
-adverse_interactions = [
+adverse_interactions = (
     {metformin, amlodipine},
     {simvastatin, erythromycin},
     {citalopram, buspirone},
@@ -22,7 +22,7 @@ adverse_interactions = [
     {warfarin, edoxaban},
     {warfarin, erythromycin},
     {warfarin, amlodipine},
-]
+)
 
 # Patient prescriptions
 patients = {

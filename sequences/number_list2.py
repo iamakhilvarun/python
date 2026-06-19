@@ -1,5 +1,5 @@
-even=[2,4,6,8]
-odd= [1,3,5,7,9]
+even=(2,4,6,8)
+odd= (1,3,5,7,9)
 
 even.extend(odd)#extend() is a list method used to add multiple elements from 
                 #another iterable (list, tuple, string, etc.) to the end of an existing list

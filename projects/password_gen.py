@@ -1,7 +1,7 @@
 #TODO=Show previously generated passwrods
 import random 
 letters ="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+"
-saved_password=[]       
+saved_password=()       
 def generate_password():
     """
     It generates a random password using letters, numbers, and special charcters

@@ -11,7 +11,7 @@ numbers=set()
 #     numbers.add(next_value)
 # print(numbers)
 
-data=["blue","red","blue","green","red","blue","white"]
+data=("blue","red","blue","green","red","blue","white")
 # Create a set form the list , to remove the duplicates
 unique_data=sorted(set(data))
 print(unique_data)

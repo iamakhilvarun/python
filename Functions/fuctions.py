@@ -21,9 +21,9 @@ def is_palindorme(string:str)->bool:
     :param bool string: the string to check
     :return bool: True if the `string ` is a plaindrome
     """
-    # backwards=string[::-1]
+    # backwards=string(::-1)
     # return backwards == string
-    return string[::-1].casefold()==string.casefold()
+    return string(::-1).casefold()==string.casefold()
 
 # word = input("please enter a word to check:")
 # if is_palindorme(word):
@@ -43,7 +43,7 @@ def palindrome_sentence(sentence:str) ->bool:
         if char.isalnum():
             string+=char
     print(string)        
-    # return string[::-1].casefold()==string.casefold()
+    # return string(::-1).casefold()==string.casefold()
     return is_palindorme(string)
 
 # word= input("Please enter your sentence: ")

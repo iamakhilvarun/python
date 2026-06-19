@@ -7,7 +7,7 @@
         # 6) use or for if else condition to make it shorter , efficent
 
 import random
-items=["rock","paper","scissors"]
+items=("rock","paper","scissors")
 
 user_score=0
 computer_score=0

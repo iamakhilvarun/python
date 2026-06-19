@@ -1,25 +1,25 @@
-availabale_parts=["computer",
+availabale_parts=("computer",
                   "monitor",
                   "keyboard",
                   "mouse",
                   "mouse mat",
                   "hdmi cable",
                   "dvd driver"
-                  ]
-# valid_choices=[str(i) for i in range (1,len(availabale_parts)+1)]
+                  )
+# valid_choices=(str(i) for i in range (1,len(availabale_parts)+1))
 
-valid_choices= []
+valid_choices= ()
 for i in range(1, len(availabale_parts) + 1 ):
     valid_choices.append(str(i))
 print(valid_choices)
 current_choice="-"
-computer_parts=[]#create a empty list
+computer_parts=()#create a empty list
 
 availabale_parts.sort()
 while current_choice != '0':
     if current_choice in valid_choices:
         index= int(current_choice) -1
-        Chosen_parts = availabale_parts[index]
+        Chosen_parts = availabale_parts(index)
         if Chosen_parts in computer_parts:
             # it is already in cart so remove them
             computer_parts.remove(Chosen_parts)

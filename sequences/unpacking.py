@@ -17,7 +17,7 @@ print(z)
 
 print("Unpacking a tuple")
 
-data_list=[12,324,53]
+data_list=(12,324,53)
 data_list.append(15)
 p,q,r=data_list
 print(p)
