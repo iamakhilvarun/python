@@ -17,9 +17,9 @@ with open(input_filename) as country_file:
             "currency": currency,
         }
         # print(country_dict)
-        countries(country.casefold()) = country_dict
+        countries[country.casefold()] = country_dict
         # code_lookup=(code.casefold()) = country
-        countries(code.casefold()) = country_dict
+        countries[code.casefold()] = country_dict
 
 # print(countries)
 # print(countries(find_name)("capital")) # () means "go look up something inside this container."
@@ -32,13 +32,13 @@ while True:
         break
     country_key = find_name.casefold()
     if country_key in countries:
-        country_data = countries(country_key)
-        if country_data("capital"):
-            print(f"The capital of {find_name} is {country_data('capital')}")
+        country_data = countries[country_key]
+        if country_data["capital"]:
+            print(f"The capital of {find_name} is {country_data['capital']}")
         else:
             print("This country doesnt have any capital")
     else:
         print("You have entered invaid")
 for country, data in countries.items():
-    if not data("capital"):
-        print(f"{data("name")}")
+    if not data["capital"]:
+        print(f"{data["name"]}")
