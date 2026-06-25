@@ -1,6 +1,9 @@
 import turtle
 import time
+# clear() -> Erases all drawings but keeps the turtle's current position, direction, and settings.
 
+# reset() -> Erases all drawings and restores the turtle to its default state
+#            (center position, facing right, default colors, pen size, etc.).
 t=turtle.Turtle()
 t.color('blue','yellow')
 

@@ -5,7 +5,7 @@ t=turtle.Turtle()
 
 t.turtlesize(10)
 t.pensize(5)
-t.color('red','green') # the first parameter changes the pen color and second parameter changes turtle object color 
+t.color('red','green') # the first parameter changes the pen colr and second parameter changes turtle object color 
 # # changes both turtle object and line color
 t.pencolor('red')# changes only line color
 t.fillcolor("blue") # changes turtle object color
