@@ -4,6 +4,7 @@ def greet_pythons(items: list) -> None:
     print(f"local namespace `greet_python`(1): {locals()}")
 
     def make_greeting(item: str) -> str:
+        nonlocal greetings
         print(f"local namespace`make_greeting`(1): {locals()}")
         greetings = "Hi"
         print(f"The id of `greeting` in `make_greeting` is {id(greetings)}")
