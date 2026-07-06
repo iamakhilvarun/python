@@ -1,7 +1,7 @@
 import datetime
 import locale
 
-locale.setlocale(locale.LC_ALL,'')
+locale.setlocale(locale.LC_ALL,'fr_FR.utf-8')  # --> '' uses system settings 
 start = datetime.date(2026, 7, 6)  # year-month-day
 print(start)
 
