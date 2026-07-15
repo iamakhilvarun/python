@@ -1,0 +1,46 @@
+{
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "explorer.confirmDelete": false,
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.fontSize": 16,
+    "workbench.editor.empty.hint": "hidden",
+    "livePreview.openPreviewTarget": "External Browser",
+    "editor.mouseWheelZoom": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "terminal.integrated.allowedLinkSchemes": [
+        "file",
+        "http",
+        "https",
+        "mailto",
+        "vscode",
+        "vscode-insiders",
+        "ms-settings"
+    ],
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.iconTheme": "pcode-icon-theme-dark-minimalis",
+    "editor.fontLigatures": true,
+    "vscode_vibrancy.disableFramelessWindow": true,
+    "workbench.colorCustomizations": {
+        "terminal.background": "#00000000",
+        "autoDocstring.docstringFormat": "sphinx"
+    
+    },
+    "terminal.integrated.gpuAcceleration": "off",
+    "window.autoDetectColorScheme": false,
+    "editor.lineHeight": 27,
+    "workbench.productIconTheme": "fluent-icons",
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Dark Horizon",
+    "workbench.sideBar.location": "right",
+    "chat.disableAIFeatures": true,
+    "autoDocstring.docstringFormat": "one-line-sphinx",
+    "workbench.editorAssociations": {
+        "*.zip": "default"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
+    
+}
