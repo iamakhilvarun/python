@@ -5,7 +5,6 @@ input_filename = "country_info.txt"
 dialect = csv.excel
 dialect.delimiter = "|"
 
-
 countries = {}
 with open(input_filename, encoding="utf-8", newline="") as country_file:
     # Get the column headings from the first line of the file
