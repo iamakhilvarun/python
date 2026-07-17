@@ -10,3 +10,8 @@ print(end_time)
 iso_time='11:15:00'
 _time=time.fromisoformat(iso_time)
 print(_time)
+
+
+iso_date='2022-05-10'
+_date=date.fromisoformat(iso_date)# it's converts an ISO string into a Python date, time, or datetime object.
+print(date)

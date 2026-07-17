@@ -11,7 +11,8 @@ zones = ("Europe/Paris", "Asia/Kolkata", "Europe/London", "Africa/Nairobi")
 # Current UTC time
 # utc_now = datetime.now(timezone.utc)
 local_now = datetime.now()
-local_now = local_now.replace(microsecond=0)
+# replaces the specified parts of a date, time, or datetime object and returns a new object.
+local_now = local_now.replace(microsecond=0) 
 for zone in zones:
     tz = zoneinfo.ZoneInfo(zone)
     # required_time = utc_now.astimezone(tz)
