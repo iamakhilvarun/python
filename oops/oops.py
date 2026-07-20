@@ -1,5 +1,6 @@
 class Kettle(object):
 
+    Power_source='electricity'
     def __init__(
         self, make, price
     ):  # __init__ runs automatically whenever you create an object.
@@ -51,4 +52,15 @@ print("*" * 80)
 
 kenwood.power = 1.5
 print(kenwood.power)
-print(hamilton.power)
+# print(hamilton.power)
+
+print("Switch to atomic power")
+Kettle.Power_source="atomic"
+print(Kettle.Power_source)
+print("Switch kenwood to gas")
+kenwood.Power_source='gas'
+print(kenwood.Power_source)
+print(hamilton.Power_source)
+print(Kettle.__dict__)
+print(kenwood.__dict__)
+print(hamilton.__dict__)
