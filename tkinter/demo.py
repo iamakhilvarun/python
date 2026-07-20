@@ -3,6 +3,7 @@ try:
 except ImportError:
      import Tkinter as tkinter # not nessassry to write ==> for python 2
 
+<<<<<<< HEAD
 mainwindow= tkinter.Tk()
 
 mainwindow.title("Hello world")
@@ -42,3 +43,10 @@ rightframe.grid(sticky='new')
 rightframe.columnconfigure(0,weight=1)
 button2.grid(sticky='ew') # due to weight it doesnt work
 mainwindow.mainloop()
+=======
+print("Tkinter version:", tk.TkVersion)
+
+root = tk.Tk()
+root.title("Test")
+root.mainloop()
+>>>>>>> 0f5a1c5 (OOPS)
