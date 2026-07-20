@@ -9,16 +9,16 @@ mainwindow = tkinter.Tk()
 mainwindow.title("Grid Demo")
 mainwindow.geometry("640x480+600+200")
 
-
+mainwindow['padx']=8
 label = tkinter.Label(mainwindow, text="Tkinter Grid Demo")
 label.grid(row=0, column=0, columnspan=3)
 
 # Configure Grid
-mainwindow.columnconfigure(0, weight=1)
+mainwindow.columnconfigure(0, weight=100)
 mainwindow.columnconfigure(1, weight=1)
-mainwindow.columnconfigure(2, weight=1)
-mainwindow.columnconfigure(3, weight=1)
-mainwindow.columnconfigure(4, weight=1)
+mainwindow.columnconfigure(2, weight=1000)
+mainwindow.columnconfigure(3, weight=600)
+mainwindow.columnconfigure(4, weight=1000)
 
 mainwindow.rowconfigure(0, weight=1)
 mainwindow.rowconfigure(1, weight=10)
@@ -96,11 +96,19 @@ dayLabels.grid(row=0,column=0,sticky='w')
 monthLabels.grid(row=0,column=1,sticky='w')
 yearLabels.grid(row=0,column=2,sticky='w')
 # Date spinners
-dayspin=tkinter.Label(dateFrame,width=5,from_=1,to=31)
-monthspin=tkinter.Label(dateFrame,width=5,values=('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'))
-yearspin=tkinter.Label(dateFrame,width=5,from_=2000,to=2099)
+dayspin=tkinter.Spinbox(dateFrame,width=5,from_=1,to=31)
+monthspin=tkinter.Spinbox(dateFrame,width=5,values=('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'))
+yearspin=tkinter.Spinbox(dateFrame,width=5,from_=2000,to=2099)
 dayspin.grid(row=1,column=0)
 monthspin.grid(row=1,column=1)
 yearspin.grid(row=1,column=2)
+
+
+#buttons
+okbutton=tkinter.Button(mainwindow,text='OK')
+cancelbutton=tkinter.Button(mainwindow,text='Cancel',command=mainwindow.destroy)
+okbutton.grid(row=4,column=3,sticky='e')
+cancelbutton.grid(row=4,column=4,sticky='w')
+
 mainwindow.mainloop()
 print(rbvalue.get())
