@@ -9,6 +9,7 @@ mainwindow.title("Hello world")
 mainwindow.geometry('640x480+600+200')
 
 label=tkinter.Label(mainwindow,text="Hello world")
+
 label.grid(row=0,column=0)
 
 leftframe=tkinter.Frame(mainwindow)
