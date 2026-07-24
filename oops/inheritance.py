@@ -32,9 +32,9 @@ class fish(Pet):
 
 p = Pet("Tim", 19)
 p.speak()
-c = Cat("bicthnigga", 20,"red")
+c = Cat("billota", 20,"red")
 c.show()
-d = Dog("dognigga", 23)
+d = Dog("kutta", 23)
 d.speak()
 f = fish("bubbles", 2)
 f.speak()

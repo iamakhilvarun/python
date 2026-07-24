@@ -9,4 +9,5 @@ class math:
     @staticmethod
     def pr():
         print("run")
+        
 math.pr()

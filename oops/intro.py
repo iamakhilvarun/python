@@ -25,6 +25,7 @@ class Dog:
 
     def set_age(self,age):
         self.age=age
+        
 d = Dog("nigga",9)
 d.set_age(23)
 print(d.get_age())
