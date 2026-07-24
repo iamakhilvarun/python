@@ -1,4 +1,4 @@
-class Pet:  # This is the general class
+class Pet:  # This is the general class --> Parent class
     def __init__(self, name, age):
         self.name = name
         self.age = age
