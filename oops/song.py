@@ -17,3 +17,7 @@ class Song:
         self.title=title
         self.artist=artist
         self.duration=duration
+
+# help(Song.__init__)
+print(Song.__doc__)
+print(Song.__init__.__doc__)
