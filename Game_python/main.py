@@ -1,41 +1,41 @@
 from enemy import Enemy, Troll,Vampire,Vampire_king
-ugly_troll = Troll("pug")
-print(f"ugly troll - {ugly_troll}")
+# ugly_troll = Troll("pug")
+# print(f"ugly troll - {ugly_troll}")
 
-another_troll = Troll("ug")
-print(f"Another troll - {another_troll}")
-
-
-brother_troll =Troll("nig")
-print(brother_troll)
-
-ugly_troll.grunt()
-another_troll.grunt()
-brother_troll.grunt()
+# another_troll = Troll("ug")
+# print(f"Another troll - {another_troll}")
 
 
-monster=Troll("Basic Enemy")
-monster.grunt()
+# brother_troll =Troll("nig")
+# print(brother_troll)
 
-monster.take_damage(10)
-print(monster)
+# ugly_troll.grunt()
+# another_troll.grunt()
+# brother_troll.grunt()
 
-vamp=Vampire("Dracula")
-print(vamp)
 
-vamp.take_damage(23)
-print(vamp)
+# monster=Troll("Basic Enemy")
+# monster.grunt()
 
-print("--------------------------")
+# monster.take_damage(10)
+# print(monster)
 
-# while vamp.alive:
-#     if not vamp.dodges():
-#         vamp.take_damage(1)
-        # print(vamp)
+# vamp=Vampire("Dracula")
+# print(vamp)
 
-vamp._lives=1
-vamp._hit_points=1
-print(vamp)
+# vamp.take_damage(23)
+# print(vamp)
+
+# print("--------------------------")
+
+# # while vamp.alive:
+# #     if not vamp.dodges():
+# #         vamp.take_damage(1)
+#         # print(vamp)
+
+# vamp._lives=1
+# vamp._hit_points=1
+# print(vamp)
 
 Boss=Vampire_king("rimuru")
 print(Boss)
