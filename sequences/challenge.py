@@ -6,7 +6,7 @@ generated_list=( '8' ,' ',
                 '8''6''7')
 # use for loop to produce list of int not strings
 # created a empty list then append it with number 
-number_integer =()
+number_integer =[]
 for value in generated_list:
     if value != ' ':
        number_integer.append(int(value))

@@ -1,14 +1,14 @@
-availabale_parts=("computer",
+availabale_parts=["computer",
                   "monitor",
                   "keyboard",
                   "mouse",
                   "mouse mat",
                   "hdmi cable",
                   "dvd driver"
-                  )
+                  ]
 # valid_choices=(str(i) for i in range (1,len(availabale_parts)+1))
 
-valid_choices= ()
+valid_choices= []
 for i in range(1, len(availabale_parts) + 1 ):
     valid_choices.append(str(i))
 print(valid_choices)
